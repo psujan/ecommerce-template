@@ -1,0 +1,30 @@
+.baseBtn {
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+  border: 1px solid transparent;
+  background-color: $gray-100;
+  &:hover{
+    background-color: $gray-200;;
+  }
+}
+
+.baseBtnRound {
+  border-radius: 30px;
+}
+
+.baseBtnPrimary {
+  color: #fff;
+  background-color: $primary;
+  &:hover {
+    background-color: $primaryHover;
+  }
+}
+
+
+@media screen and (max-width: $sm){
+  .baseBtn{
+    padding: 10px 15px;
+  }
+}

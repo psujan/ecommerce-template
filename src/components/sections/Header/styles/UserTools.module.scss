@@ -1,0 +1,25 @@
+.cartImg {
+  width: 80px;
+  height: 80px;
+}
+
+.cartMenuWrap {
+  border-radius: 8px;
+  background-color: #fff;
+  width: 380px;
+  padding: 20px 15px;
+  border: 1px solid $gray-200;
+}
+
+.userMenuWrap {
+  border-radius: 8px;
+  border: 1px solid $gray-200;
+  padding: 20px 15px;
+}
+
+
+@media screen and (max-width: $sm ) {
+  .cartMenuWrap{
+    width: 280px;
+  }
+}

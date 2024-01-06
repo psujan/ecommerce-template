@@ -1,0 +1,53 @@
+//utility classes throughout app
+
+.text-logo {
+  font-size: 2.2rem;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fs-tiny {
+  font-size: 0.8rem;
+}
+
+.border {
+  border: 1px solid $gray-200;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $gray-200;
+}
+
+.border-top {
+  border-top: 1px solid $gray-200;
+}
+
+.border-light {
+  border: 1px solid $gray-100;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid $gray-100;
+}
+
+.cur-p{
+  cursor: pointer;
+}
+
+.dropdown-icon-btn{
+  padding: 8px;
+  width:42px;
+  height:42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid $gray-200;
+  border-radius: 30px;
+  transition: 0.25s ease;
+  &:hover{
+    background-color: $gray-200;
+  }
+}
