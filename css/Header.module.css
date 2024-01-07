@@ -1,3 +1,28 @@
 .headerTop {
   height: 80px;
 }
+
+.headerBottomNav {
+  height: 50px;
+}
+.headerBottomNav nav {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.headerBottomNav nav ul {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.headerBottomNav nav ul li {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.headerBottomNav nav ul li a {
+  text-align: center;
+  font-size: 0.95rem;
+  margin: auto 10px;
+  transition: 0.25s ease;
+}

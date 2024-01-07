@@ -12210,6 +12210,7 @@ input {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 h1, .h1,
@@ -12224,6 +12225,26 @@ h5,
   font-family: "Source Sans 3", sans-serif;
 }
 
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  font-size: 1.7rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.2rem;
+}
+
+h5, .h5 {
+  font-size: 1rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -12235,7 +12256,137 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+.fw-medium {
+  font-weight: 500;
+}
+
+.fs-tiny {
+  font-size: 0.8rem;
+}
+
+.border {
+  border: 1px solid #dfdfdf;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.border-top {
+  border-top: 1px solid #dfdfdf;
+}
+
+.border-light {
+  border: 1px solid #efefef;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid #efefef;
+}
+
+.cur-p {
+  cursor: pointer;
+}
+
+.dropdown-icon-btn {
+  padding: 8px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfdfdf;
+  border-radius: 30px;
+  transition: 0.25s ease;
+}
+.dropdown-icon-btn:hover {
+  background-color: #dfdfdf;
+}
+
 /*modify third party styles*/
-.cartMenuWrap {
-  border-color: #dfdfdf;
+.mobileSideNav {
+  background-color: #fff;
+  height: 100vh;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: 9;
+  box-shadow: 3px 0 4px #eee;
+  transition: 0.25s ease;
+}
+
+.mobileSideNav.close {
+  width: 0px;
+  opacity: 0;
+}
+
+.mobileSideNav.open {
+  width: 280px;
+  opacity: 1;
+}
+
+.sideNavClose {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 30px;
+  transition: 0.25s ease;
+}
+.sideNavClose:hover {
+  background-color: #dfdfdf;
+}
+
+#mobileSideAccordion {
+  max-width: 280px;
+}
+#mobileSideAccordion .accordion-button:after {
+  background-image: url("../../../../assets/images/icons/arrow-down-s-line.svg");
+}
+
+.subCategoryList {
+  padding: 12px 24px;
+  transition: 0.25s ease;
+}
+.subCategoryList:hover {
+  background-color: #efefef;
+}
+.subCategoryList a {
+  width: 100%;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+.subCategoryList a:hover {
+  color: #f3602b !important;
+}
+
+#mobileSideAccordion {
+  width: 280px;
+}
+#mobileSideAccordion .accordion-item {
+  border: none;
+}
+#mobileSideAccordion .accordion-item .accordion-header .accordion-button {
+  border: none;
+}
+#mobileSideAccordion .accordion-item .accordion-header .accordion-button:after {
+  background-image: url("../../assets/images/icons/arrow-down-s-line.svg") !important;
+}
+#mobileSideAccordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  background-color: #efefef;
+}
+#mobileSideAccordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: #efefef;
+  box-shadow: none;
+}
+#mobileSideAccordion .accordion-item .accordion-header .accordion-button:hover {
+  background-color: #efefef;
+}
+#mobileSideAccordion .accordion-item .accordion-body {
+  padding: 0;
+  margin: 10px 0;
 }

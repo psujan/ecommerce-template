@@ -1,3 +1,53 @@
-.headerTop{
-  height:80px;
+.headerTop {
+  height: 80px;
+}
+
+.headerBottomNav {
+  height: 50px;
+  nav {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    ul {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      li {
+        align-self: stretch;
+        a {
+          height: 100%;
+          display: inline-flex;
+          align-items: center;
+          text-align: center;
+          font-size: 0.95rem;
+          padding: 0 20px;
+          transition: 0.25s ease;
+          &:hover {
+            background-color: $gray-100;
+            color:$primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.browseCategory{
+  // background-color: $gray-100;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  padding:0 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border-right:1px solid $gray-200;
+  margin-right: 50px;
+  &:hover{
+    background-color: $gray-100;
+  }
+  a{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
 }

@@ -14,12 +14,23 @@
 .userMenuWrap {
   border-radius: 8px;
   border: 1px solid $gray-200;
-  padding: 20px 15px;
+  padding: 0;
+  ul {
+    padding:20px 0;
+    li {
+      padding:10px 12px;
+      transition: 0.25s ease;
+      font-size: 0.95rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $gray-100;
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width: $sm ) {
-  .cartMenuWrap{
+@media screen and (max-width: $sm) {
+  .cartMenuWrap {
     width: 280px;
   }
 }

@@ -6,14 +6,17 @@ const MiniUserMenu = forwardRef((props, ref) => {
   return (
     <div ref={ref} style={props.style} className={props.className}>
       <ul>
-        <li className="py-2">
-          <a href={() => false}>Login</a>
+        <li>
+          <a href={() => false}><span><i className="ri-login-circle-line pe-2"></i></span>Login</a>
         </li>
-        <li className="py-2">
-          <a href={() => false}>Purchase</a>
+        <li>
+          <a href={() => false}><span><i className="ri-history-line pe-2"></i></span>Orders</a>
         </li>
-        <li className="py-2">
-          <a href={() => false}>Track Order</a>
+        <li>
+          <a href={() => false}><span><i className="ri-checkbox-line pe-2"></i></span>Saved Items</a>
+        </li>
+        <li>
+          <a href={() => false}><span><i className="ri-settings-2-line pe-2"></i></span>Settings</a>
         </li>
       </ul>
     </div>
