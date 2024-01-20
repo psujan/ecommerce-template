@@ -5,12 +5,24 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
 .fw-medium {
   font-weight: 500;
 }
 
 .fs-tiny {
   font-size: 0.8rem;
+}
+
+.fs-text {
+  font-size: 0.95rem;
 }
 
 .border {
@@ -33,21 +45,47 @@
   border-bottom: 1px solid $gray-100;
 }
 
-.cur-p{
+.cur-p {
   cursor: pointer;
 }
 
-.dropdown-icon-btn{
+.lh-p {
+  line-height: 1.6;
+}
+
+.dropdown-icon-btn {
   padding: 8px;
-  width:42px;
-  height:42px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border:1px solid $gray-200;
+  border: 1px solid $gray-200;
   border-radius: 30px;
   transition: 0.25s ease;
-  &:hover{
+  &:hover {
     background-color: $gray-200;
+  }
+}
+
+.no-display {
+  opacity: 0;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section-heading {
+  h2 {
+    display: block;
+    &:after{
+      content:'';
+      display: block;
+      width:160px;
+      height: 1px;
+      margin-top: 10px;
+      background-color: $primary;
+    }
   }
 }

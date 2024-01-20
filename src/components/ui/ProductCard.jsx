@@ -1,0 +1,52 @@
+/* eslint-disable react/prop-types */
+import Button from "./Button";
+
+export default function ProductCard({
+  baseClass = "col-xl col-lg-3 col-sm-6 col-md-4 mb-4",
+  image,
+  title,
+  rating,
+  ratingCount,
+  discountPrice,
+  price,
+}) {
+  let stars = "";
+  stars = [...Array(5)].map((i, idx) => (
+    <i className={`ri-star-${idx < rating ? "fill" : "line"}`} key={idx}></i>
+  ));
+  return (
+    <div className={baseClass}>
+      <div className="p-card">
+        <div className="p-card-img">
+          <a href={() => false}>
+            {" "}
+            <img src={image} alt="" className="img-fluid" />
+          </a>
+        </div>
+        <div className="p-card-body">
+          <div className="ptitle">{title}</div>
+          <div className="prating">
+            <span className="text-primary">{stars}</span>
+            <span className="ps-2 text-muted text-underline">
+              <a href={() => false} className="">
+                ({ratingCount})
+              </a>
+            </span>
+          </div>
+          <div className="pprice">
+            <span className="fw-medium">${discountPrice}</span>
+            <span className="text-muted text-line-through">${price}</span>
+          </div>
+          <div className="p-cart pt-4">
+            <Button
+              title="Add To Cart"
+              appendClass="w-100 baseBtnGrayOutline"
+              type={null}
+              iconClass="ri-shopping-cart-line"
+            ></Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
