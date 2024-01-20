@@ -61,6 +61,33 @@
   }
 }
 
+.collection-card {
+  border-radius: 8px;
+  border: 1px solid $gray-100;
+  padding: 20px;
+  background-color: $white;
+  transition: 0.25s ease;
+  &:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .collection-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    .collection-img {
+      flex: 1 1 100%;
+      height: 180px;
+      img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $gray-100;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $sm) {
   .p-row {
     .col-xl {

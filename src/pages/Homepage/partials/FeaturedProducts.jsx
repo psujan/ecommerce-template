@@ -1,6 +1,5 @@
 import ProductCard from "../../../components/ui/ProductCard";
 import { Products } from "../../../data/product";
-console.log(Products);
 
 export default function FeaturedProducts() {
   return (
