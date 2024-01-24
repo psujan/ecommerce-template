@@ -1,3 +1,4 @@
+import Footer from "../sections/Footer";
 import Header from "../sections/Header/Header";
 
 // eslint-disable-next-line react/prop-types
@@ -6,6 +7,7 @@ export default function PageLayout({ children }) {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,26 @@
+footer {
+  background-color: $dark;
+  color: $white;
+}
+
+.footer-list {
+  li {
+    a {
+      line-height: 2.2;
+      transition: 0.25s ease;
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.social-media-list {
+  a {
+    font-size: 1.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12px;
+  }
+}
