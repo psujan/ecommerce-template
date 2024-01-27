@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 export default function ProductCard({
   baseClass = "col-xl col-lg-3 col-sm-6 col-md-4 mb-4",
@@ -9,6 +10,7 @@ export default function ProductCard({
   ratingCount,
   discountPrice,
   price,
+  link = "/product-detail",
 }) {
   let stars = "";
   stars = [...Array(5)].map((i, idx) => (
@@ -16,37 +18,39 @@ export default function ProductCard({
   ));
   return (
     <div className={baseClass}>
-      <div className="p-card">
-        <div className="p-card-img">
-          <a href={() => false}>
-            {" "}
-            <img src={image} alt="" className="img-fluid" />
-          </a>
+      <Link to={link}>
+        <div className="p-card">
+          <div className="p-card-img">
+            <a href={() => false}>
+              {" "}
+              <img src={image} alt="" className="img-fluid" />
+            </a>
+          </div>
+          <div className="p-card-body">
+            <div className="ptitle">{title}</div>
+            <div className="prating">
+              <span className="text-primary">{stars}</span>
+              <span className="ps-2 text-muted text-underline">
+                <a href={() => false} className="">
+                  ({ratingCount})
+                </a>
+              </span>
+            </div>
+            <div className="pprice">
+              <span className="fw-medium">${discountPrice}</span>
+              <span className="text-muted text-line-through">${price}</span>
+            </div>
+            <div className="p-cart pt-4">
+              <Button
+                title="Add To Cart"
+                appendClass="w-100 baseBtnGrayOutline"
+                type={null}
+                iconClass="ri-shopping-cart-line"
+              ></Button>
+            </div>
+          </div>
         </div>
-        <div className="p-card-body">
-          <div className="ptitle">{title}</div>
-          <div className="prating">
-            <span className="text-primary">{stars}</span>
-            <span className="ps-2 text-muted text-underline">
-              <a href={() => false} className="">
-                ({ratingCount})
-              </a>
-            </span>
-          </div>
-          <div className="pprice">
-            <span className="fw-medium">${discountPrice}</span>
-            <span className="text-muted text-line-through">${price}</span>
-          </div>
-          <div className="p-cart pt-4">
-            <Button
-              title="Add To Cart"
-              appendClass="w-100 baseBtnGrayOutline"
-              type={null}
-              iconClass="ri-shopping-cart-line"
-            ></Button>
-          </div>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,0 +1,63 @@
+.color-box-outline {
+  transition: 0.25s ease;
+  cursor: pointer;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  align-items: center;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $primary;
+  }
+  div {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
+
+.color-box-outline.active{
+  border-color: $primary;
+}
+
+.text-box-outline {
+  font-size: 0.9rem;
+  white-space: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid $gray-100;
+  transition: 0.25s ease;
+  &:hover {
+    border-color: $primary;
+  }
+}
+
+.text-box-outline.active{
+  border-color: $primary;
+}
+
+.p-qty{
+  button{
+    // width: 32px;
+    // height: 32px;
+    @include box-center(32px , 32px);
+    background-color: $gray-100;
+    border-radius: 6px;
+    gap:4px;
+    border:none;
+    transition:  0.25s ease;
+    &:hover{
+      scale:0.9
+    }
+  }
+  span{
+    @include center;
+    background-color: $white;
+  }
+}

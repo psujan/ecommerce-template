@@ -1,0 +1,18 @@
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-center($width, $height){
+  @include center();
+  width: $width;
+  height: $height;
+}
+
+@mixin box-center-round($width, $height){
+  @include box-center($width , $height);
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}

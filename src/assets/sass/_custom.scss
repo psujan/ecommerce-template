@@ -1,3 +1,31 @@
 /*modify third party styles*/
+$ig-blue: $primary;
+@import "../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
+.image-gallery-slide-wrapper {
+  padding-left: 12px;
+}
 
+.image-gallery-thumbnail {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  img {
+    border-radius: 4px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 2px solid $primary;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-thumbnail:hover {
+    outline: none;
+    border: 2px solid $primary;
+  }
+}
