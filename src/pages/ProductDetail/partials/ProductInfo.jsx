@@ -104,7 +104,7 @@ export default function ProductInfo({ rating = 4 }) {
                     <div style={{ backgroundColor: "#ccc" }}></div>
                   </div>
                   <div className="color-box-outline me-2 p-1" title="lightblue">
-                    <div style={{ backgroundColor: "##e2f8ff" }}></div>
+                    <div style={{ backgroundColor: "#e2f8ff" }}></div>
                   </div>
                 </div>
               </div>
