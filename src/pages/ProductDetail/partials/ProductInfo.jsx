@@ -9,6 +9,7 @@ import Img4 from "../../../assets/images/product-detail/p4.jpg";
 import Img5 from "../../../assets/images/product-detail/p5.jpg";
 import { useEffect } from "react";
 import Button from "../../../components/ui/Button";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const images = [
   {
@@ -55,6 +56,8 @@ export default function ProductInfo({ rating = 4 }) {
     }
   }, [selected]);
 
+  const { width } = useWindowDimensions();
+
   return (
     <section className="">
       <div className="container">
@@ -64,12 +67,12 @@ export default function ProductInfo({ rating = 4 }) {
               items={images}
               showNav={false}
               showPlayButton={false}
-              thumbnailPosition="left"
+              thumbnailPosition={width > 500 ? "left" : "bottom"}
             />
           </div>
           <div className="col-lg-4 col-md-12 mb-4">
             <div className="product-info border-bottom">
-              <h4 className="fw-bold mb-3">Nikon Camera 4k Lens Zoom Pro</h4>
+              <h4 className="fw-bold mb-3">Canyon Camera 4k Lens Zoom Pro</h4>
               <div className="price d-flex align-items-baseline mb-3">
                 <span style={{ fontSize: "1.25rem" }}>$125</span>
                 <div className="ps-3 d-inline-flex">

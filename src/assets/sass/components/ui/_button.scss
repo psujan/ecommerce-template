@@ -41,6 +41,13 @@
   }
 }
 
+.atcBtn{
+  &:hover{
+    border: 1px solid $primaryLight;
+    background-color: $primaryLight;
+    color:$primary;
+  }
+}
 @media screen and (max-width: $sm) {
   .baseBtn {
     padding: 10px 15px;

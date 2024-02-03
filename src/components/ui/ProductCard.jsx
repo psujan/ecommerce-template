@@ -43,7 +43,7 @@ export default function ProductCard({
             <div className="p-cart pt-4">
               <Button
                 title="Add To Cart"
-                appendClass="w-100 baseBtnGrayOutline"
+                appendClass="w-100 baseBtnGrayOutline atcBtn"
                 type={null}
                 iconClass="ri-shopping-cart-line"
               ></Button>
