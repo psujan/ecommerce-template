@@ -21,10 +21,7 @@ export default function ProductCard({
       <Link to={link}>
         <div className="p-card">
           <div className="p-card-img">
-            <a href={() => false}>
-              {" "}
-              <img src={image} alt="" className="img-fluid" />
-            </a>
+            <img src={image} alt="" className="img-fluid" />
           </div>
           <div className="p-card-body">
             <div className="ptitle">{title}</div>

@@ -15,7 +15,7 @@ export default function SimilarProducts() {
               const card =
                 (i + 1) % 5 == 0 ? (
                   <>
-                    <ProductCard key={i} {...row}></ProductCard>
+                    <ProductCard key={i+1} {...row}></ProductCard>
                     <div className="p-row-break"></div>
                   </>
                 ) : (

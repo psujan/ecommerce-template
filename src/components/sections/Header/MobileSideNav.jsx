@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Accordion from "react-bootstrap/Accordion";
 import { Categories } from "../../../data/categories";
+import { Link } from "react-router-dom";
 
 export default function MobileSideNav({ show, closeSideNav }) {
   return (
@@ -27,7 +28,7 @@ export default function MobileSideNav({ show, closeSideNav }) {
                     {row.subCategory.map((data, k) => {
                       return (
                         <li className={`subCategoryList`} key={k}>
-                          <a href={() => false}>{data.title}</a>
+                          <Link to="/shop-by-category">{data.title}</Link>
                         </li>
                       );
                     })}

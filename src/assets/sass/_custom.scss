@@ -29,3 +29,16 @@ $ig-blue: $primary;
     border: 2px solid $primary;
   }
 }
+
+//bootstrap-form
+.form-check-input {
+  margin-top: 0 !important;
+  border-radius: 4px;
+  // border-color: $gray-100 !important;
+  &:checked {
+    box-shadow: none !important;
+  }
+  &:not(:checked) {
+    box-shadow: none !important;
+  }
+}

@@ -31,22 +31,22 @@ export default function HeaderBottom() {
           <nav>
             <ul className="d-inline-flex">
               <li>
-                <Link to="/">Electronics</Link>
+                <Link to="/shop-by-category">Electronics</Link>
               </li>
               <li>
-                <Link to="/">Home Appliances</Link>
+                <Link to="/shop-by-category">Home Appliances</Link>
               </li>
               <li>
-                <Link to="/">Clothing</Link>
+                <Link to="/shop-by-category">Clothing</Link>
               </li>
               <li>
-                <Link to="/">Groccery</Link>
+                <Link to="/shop-by-category">Groccery</Link>
               </li>
               <li>
-                <Link to="/">Health & Beauty</Link>
+                <Link to="/shop-by-category">Health & Beauty</Link>
               </li>
               <li>
-                <Link to="/">Gaming</Link>
+                <Link to="/shop-by-category">Gaming</Link>
               </li>
             </ul>
           </nav>

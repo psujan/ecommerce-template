@@ -41,11 +41,12 @@
   }
 }
 
-.atcBtn{
-  &:hover{
-    border: 1px solid $primaryLight;
+.atcBtn {
+  font-weight: 500;
+  &:hover {
+    border: 1px solid $primary;
     background-color: $primaryLight;
-    color:$primary;
+    color: $primary;
   }
 }
 @media screen and (max-width: $sm) {
