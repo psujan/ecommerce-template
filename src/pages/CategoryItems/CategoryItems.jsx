@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PageLayout from "../../components/layouts/PageLayout";
 import Breadcrumb from "../../components/ui/Breadcrumb";
-import { Products } from "../../data/product";
+import { CategoryProducts } from "../../data/product";
 import ProductCard from "../../components/ui/ProductCard";
 import ProductFilter from "../../components/ui/prouduct-filter/ProductFilter";
 import Form from "react-bootstrap/Form";
@@ -72,7 +72,7 @@ export default function CategoryItems() {
                 </div>
               </div>
               <div className="row p-row no-gutters">
-                {Products.map((row, i) => (
+                {CategoryProducts.map((row, i) => (
                   <ProductCard
                     key={i}
                     {...row}

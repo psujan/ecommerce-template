@@ -18,6 +18,20 @@ import Img17 from "../assets/images/products/p17.jpg";
 import Img18 from "../assets/images/products/p18.jpg";
 import Img19 from "../assets/images/products/p19.jpg";
 
+//For Category Products
+import L1 from "../assets/images/products/p-l-1.png";
+import L3 from "../assets/images/products/p-l-3.jpg";
+import L4 from "../assets/images/products/p-l-4.jpg";
+import L5 from "../assets/images/products/p-l-5.jpg";
+import L6 from "../assets/images/products/p-l-6.jpg";
+import L7 from "../assets/images/products/p-l-7.jpg";
+import L8 from "../assets/images/products/p-l-8.jpg";
+import L9 from "../assets/images/products/p-l-9.jpg";
+import L10 from "../assets/images/products/p-l-10.jpg";
+import L11 from "../assets/images/products/p-l-11.jpg";
+import L12 from "../assets/images/products/p-l-12.jpg";
+
+
 const Products = [
   {
     title: "Samsung Galaxy Ram 4GB,6GB New",
@@ -184,4 +198,119 @@ const SimilarProductList = [
   },
 ];
 
-export { Products, SimilarProductList };
+const CategoryProducts = [
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L1,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img9,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img19,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img10,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L3,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L4,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L5,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L6,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L7,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L8,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L9,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L10,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L11,
+  },
+  {
+    title: "Work Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: L12,
+  },
+]
+
+export { Products, SimilarProductList, CategoryProducts };
