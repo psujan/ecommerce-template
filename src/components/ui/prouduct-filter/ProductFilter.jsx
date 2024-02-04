@@ -1,10 +1,21 @@
+/* eslint-disable react/prop-types */
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-export default function ProductFilter() {
+import Button from "../Button";
+export default function ProductFilter({ closeSideFilter }) {
   return (
-    <div>
-      <h4 className="fw-bold mb-4">Filter</h4>
+    <div className="product-filter-wrap">
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h4 className="fw-bold">Filter</h4>
+        <a
+          href={() => false}
+          className={`sideNavClose d-lg-none d-sm-inline-block`}
+          onClick={() => closeSideFilter(false)}
+        >
+          <i className="ri-close-line"></i>
+        </a>
+      </div>
       <div className="filter-category mb-4">
         <h5 className="border-bottom pb-2 fw-medium">Price Range</h5>
         <div className="filter-options py-2 fs-text">
@@ -166,6 +177,10 @@ export default function ProductFilter() {
             name="refurbished"
           />
         </div>
+      </div>
+      <div className="filter-action d-flex gap-3 mb-4 d-lg-none d-sm-block">
+        <Button title="Apply All" type="primary" appendClass="flx-1"></Button>
+        <Button title="Clear" type="" appendClass="flx-1"></Button>
       </div>
     </div>
   );

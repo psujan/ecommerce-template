@@ -1,0 +1,28 @@
+.filter-col {
+  display: none;
+  position: relative;
+}
+
+@media screen and (min-width: $lg) {
+  .filter-col {
+    display: block;
+  }
+}
+
+.filter-col.open {
+  display: block;
+  .product-filter-wrap {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+    z-index: 10;
+    // min-height: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    width: 280px;
+  }
+}
