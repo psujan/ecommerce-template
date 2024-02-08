@@ -104,6 +104,10 @@
   }
 }
 
+.box-circle-sm{
+  @include box-center-round(16px ,16px)
+}
+
 .no-display {
   opacity: 0;
 }

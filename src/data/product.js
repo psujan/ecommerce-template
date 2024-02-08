@@ -31,6 +31,18 @@ import L10 from "../assets/images/products/p-l-10.jpg";
 import L11 from "../assets/images/products/p-l-11.jpg";
 import L12 from "../assets/images/products/p-l-12.jpg";
 
+//For Collection Products
+import s1 from "../assets/images/products/p-s-1.jpg";
+import s2 from "../assets/images/products/p-s-2.jpg";
+import s3 from "../assets/images/products/p-s-3.jpg";
+import s4 from "../assets/images/products/p-s-4.jpg";
+import s5 from "../assets/images/products/p-s-5.jpg";
+import s6 from "../assets/images/products/p-s-6.jpg";
+import s7 from "../assets/images/products/p-s-7.jpg";
+import s8 from "../assets/images/products/p-s-8.jpg";
+import s9 from "../assets/images/products/p-s-9.jpg";
+import s10 from "../assets/images/products/p-s-10.jpg";
+import s11 from "../assets/images/products/p-s-11.jpg";
 
 const Products = [
   {
@@ -165,7 +177,7 @@ const SimilarProductList = [
     image: Img16,
   },
   {
-    title:"Canon EOS 250D (Rebel SL3) DSLR Camera",
+    title: "Canon EOS 250D (Rebel SL3) DSLR Camera",
     discountPrice: "150",
     price: "180",
     rating: 4,
@@ -173,7 +185,7 @@ const SimilarProductList = [
     image: Img17,
   },
   {
-    title:"Canon EOS Rebel T7 DSLR Camera Bundle",
+    title: "Canon EOS Rebel T7 DSLR Camera Bundle",
     discountPrice: "150",
     price: "180",
     rating: 4,
@@ -181,7 +193,7 @@ const SimilarProductList = [
     image: Img18,
   },
   {
-    title:"HP 15.6'' HD Touchscreen Laptop, Dual Core Intel",
+    title: "HP 15.6'' HD Touchscreen Laptop, Dual Core Intel",
     discountPrice: "150",
     price: "180",
     rating: 4,
@@ -311,6 +323,97 @@ const CategoryProducts = [
     ratingCount: 28,
     image: L12,
   },
-]
+];
 
-export { Products, SimilarProductList, CategoryProducts };
+const CollectionProducts = [
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s1,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s2,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s3,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s4,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s5,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s6,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s7,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s8,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s9,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s10,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s11,
+  },
+];
+
+export { Products, SimilarProductList, CategoryProducts, CollectionProducts };

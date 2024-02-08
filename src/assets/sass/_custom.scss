@@ -42,3 +42,15 @@ $ig-blue: $primary;
     box-shadow: none !important;
   }
 }
+
+//react-select-dropdown
+.filter-select{
+  min-width: 180px;
+}
+
+.price-select{
+  .react-dropdown-select-dropdown{
+    width: 250px;
+  }
+}
+
