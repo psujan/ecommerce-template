@@ -6,6 +6,7 @@ import SortFilter from "../../components/ui/select-filter/SortFilter";
 import CategoryFilter from "../../components/ui/select-filter/CategoryFilter";
 import DealFilter from "../../components/ui/select-filter/DealFilter";
 import PriceFilter from "../../components/ui/select-filter/PriceFilter";
+import ColorFilter from "../../components/ui/select-filter/ColorFilter";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -31,6 +32,7 @@ export default function CollectionItem() {
                 <PriceFilter />
                 <CategoryFilter />
                 <DealFilter />
+                <ColorFilter />
               </div>
             </div>
           </div>
