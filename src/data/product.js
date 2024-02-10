@@ -43,6 +43,11 @@ import s8 from "../assets/images/products/p-s-8.jpg";
 import s9 from "../assets/images/products/p-s-9.jpg";
 import s10 from "../assets/images/products/p-s-10.jpg";
 import s11 from "../assets/images/products/p-s-11.jpg";
+import s12 from "../assets/images/products/p-s-12.jpg";
+import s13 from "../assets/images/products/p-s-13.jpg";
+import s14 from "../assets/images/products/p-s-14.jpg";
+import s15 from "../assets/images/products/p-s-15.jpg";
+
 
 const Products = [
   {
@@ -413,6 +418,38 @@ const CollectionProducts = [
     rating: 4,
     ratingCount: 28,
     image: s11,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s12,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s13,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s14,
+  },
+  {
+    title: "New Winter Fashion | Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: s15,
   },
 ];
 

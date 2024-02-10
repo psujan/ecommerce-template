@@ -27,12 +27,17 @@ export default function CollectionItem() {
         <div className="container">
           <div className="row my-3">
             <div className="col-md-12">
-              <div className="d-flex gap-4">
+              <div className="d-flex align-items-center gap-4">
                 <SortFilter />
                 <PriceFilter />
                 <CategoryFilter />
                 <DealFilter />
                 <ColorFilter />
+                <div className="ml-auto bg-gray rounded py-2 px-2">
+                  <span className=" fw-medium rounded-circle fs-tiny">
+                    289 results
+                  </span>
+                </div>
               </div>
             </div>
           </div>
