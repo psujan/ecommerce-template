@@ -48,6 +48,11 @@ import s13 from "../assets/images/products/p-s-13.jpg";
 import s14 from "../assets/images/products/p-s-14.jpg";
 import s15 from "../assets/images/products/p-s-15.jpg";
 
+//for deal products
+import d1 from "../assets/images/products/p-d-1.jpg";
+import d2 from "../assets/images/products/p-d-2.jpg";
+import d3 from "../assets/images/products/p-d-3.jpg";
+import d4 from "../assets/images/products/p-d-4.jpg";
 
 const Products = [
   {
@@ -453,4 +458,163 @@ const CollectionProducts = [
   },
 ];
 
-export { Products, SimilarProductList, CategoryProducts, CollectionProducts };
+const DealProducts = [
+  {
+    title: "Ultra Fine Markers 2Pcs",
+    discountPrice: "3",
+    price: "5",
+    rating: 4,
+    ratingCount: 28,
+    image: d1,
+    saveAmount: "9",
+    isSpecial: true,
+  },
+  {
+    title: "Sistema Ultra Tritan Container 920mL",
+    discountPrice: "99",
+    price: "6",
+    rating: 4,
+    ratingCount: 28,
+    image: d2,
+    saveAmount: "12",
+    isSpecial: true,
+  },
+  {
+    title: "Apple iPhone 15 128GB - Pink",
+    discountPrice: "99",
+    price: "1399",
+    rating: 4,
+    ratingCount: 28,
+    image: d3,
+    saveAmount: "100",
+    isSpecial: true,
+  },
+  {
+    title: "Brilliant Basics Bang On Backpack - Stars",
+    discountPrice: "20",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: d4,
+    saveAmount: "15",
+    isSpecial: true,
+  },
+  {
+    title: "Yellow wireless headhphone",
+    discountPrice: "50",
+    price: "80",
+    rating: 4,
+    ratingCount: 22,
+    image: Img5,
+    saveAmount: "20",
+    isSpecial: true,
+  },
+  {
+    title: "Red wireless headhphone",
+    discountPrice: "50",
+    price: "80",
+    rating: 4,
+    ratingCount: 22,
+    image: Img6,
+    saveAmount: "20",
+    isSpecial: true,
+  },
+  {
+    title: "Hover Skateboard Scooter",
+    discountPrice: "100",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: Img7,
+    saveAmount: "100",
+    isSpecial: true,
+  },
+  {
+    title: "HP Notebook 8GB RAM",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img8,
+    saveAmount: "200",
+    isSpecial: true,
+  },
+  {
+    title: "Dell Laptop 8GB RAM | 128GB SSD",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img9,
+    saveAmount: "150",
+    isSpecial: true,
+  },
+  {
+    title: "Razon Geear Ultra 16GB Ram",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img10,
+    saveAmount: "300",
+    isSpecial: true,
+  },
+  {
+    title: "SmartTablet 14inch |",
+    discountPrice: "800",
+    price: "850",
+    rating: 4,
+    ratingCount: 28,
+    image: Img11,
+    saveAmount: "200",
+    isSpecial: true,
+  },
+  {
+    title: "Foldable GPS Drone",
+    discountPrice: "250",
+    price: "300",
+    rating: 4,
+    ratingCount: 28,
+    image: Img12,
+    saveAmount: "100",
+    isSpecial: true,
+  },
+  {
+    title: "DJI Phantom Drone 2k",
+    discountPrice: "250",
+    price: "300",
+    rating: 4,
+    ratingCount: 28,
+    image: Img13,
+    saveAmount: "100",
+    isSpecial: true,
+  },
+  {
+    title: "New Dress C Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: Img14,
+    saveAmount: "50",
+    isSpecial: true,
+  },
+  {
+    title: "New Dress C Nice Elegant For Women",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: Img15,
+    saveAmount: "30",
+    isSpecial: true,
+  },
+];
+
+export {
+  Products,
+  SimilarProductList,
+  CategoryProducts,
+  CollectionProducts,
+  DealProducts,
+};

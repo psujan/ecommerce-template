@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import SpecialTag from "./products/SpecialTag";
 
 export default function ProductCard({
   baseClass = "col-xl col-lg-3 col-sm-6 col-md-4 mb-4",
@@ -11,7 +12,10 @@ export default function ProductCard({
   discountPrice,
   price,
   link = "/product-detail",
+  isSpecial = false,
+  saveAmount = 0,
 }) {
+  console.log(saveAmount);
   let stars = "";
   stars = [...Array(5)].map((i, idx) => (
     <i className={`ri-star-${idx < rating ? "fill" : "line"}`} key={idx}></i>
@@ -20,6 +24,7 @@ export default function ProductCard({
     <div className={baseClass}>
       <Link to={link}>
         <div className="p-card">
+          {isSpecial && <SpecialTag />}
           <div className="p-card-img">
             <img src={image} alt="" className="img-fluid" />
           </div>
@@ -35,7 +40,11 @@ export default function ProductCard({
             </div>
             <div className="pprice">
               <span className="fw-medium">${discountPrice}</span>
-              <span className="text-muted text-line-through">${price}</span>
+              {isSpecial ? (
+                <SpecialTag text={`Save $${saveAmount}`} controlClass="special-tag-price"/>
+              ) : (
+                <span className="text-muted text-line-through">${price}</span>
+              )}
             </div>
             <div className="p-cart pt-4">
               <Button

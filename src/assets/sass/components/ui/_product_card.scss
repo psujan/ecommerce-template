@@ -1,4 +1,5 @@
 .p-card {
+  position: relative;
   min-height: 340px;
   transition: 0.25s ease;
   background-color: $white;
@@ -31,7 +32,7 @@
   }
 }
 
-.p-card-img{
+.p-card-img {
   min-height: 197px;
 }
 .p-row-break {
@@ -89,6 +90,32 @@
       }
     }
   }
+}
+
+.special-tag {
+  padding:4px;
+  border-radius: 4px;
+  background-color: $yellow;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  letter-spacing: 1px;
+  transform: rotate(270deg) translate(-100%);
+  transform-origin: top left;
+}
+
+.special-tag-price{
+  position: relative;
+  top:0;
+  left:0;
+  transform: none;
+  background-color: $primary;
+  // color:$white;
+  letter-spacing: normal;
 }
 
 @media screen and (max-width: $sm) {
