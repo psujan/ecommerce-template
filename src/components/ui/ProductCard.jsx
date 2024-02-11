@@ -15,7 +15,6 @@ export default function ProductCard({
   isSpecial = false,
   saveAmount = 0,
 }) {
-  console.log(saveAmount);
   let stars = "";
   stars = [...Array(5)].map((i, idx) => (
     <i className={`ri-star-${idx < rating ? "fill" : "line"}`} key={idx}></i>

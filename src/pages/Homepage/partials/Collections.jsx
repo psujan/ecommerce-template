@@ -42,7 +42,7 @@ export default function Collections() {
         <div className="section-heading mb-4">
           <h2 className="fw-bold ">Collections</h2>
         </div>
-        <div className="row">
+        <div className="row g-4">
           {CollectionsArr.map((row, i) => (
             <CollectionCard key={i} {...row}></CollectionCard>
           ))}

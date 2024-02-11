@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 export default function CollectionCard({ title, pCount, images }) {
   return (
-    <div className="col-lg-6 col-sm-12 col-md-12 mb-5">
+    <div className="col-lg-6 col-sm-12 col-md-12">
       <div className="collection-card">
         <Link to="/shop-by-collection">
           <div className="collection-card-heading text-center mb-3">
