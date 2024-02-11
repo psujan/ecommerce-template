@@ -38,10 +38,15 @@ export default function ProductCard({
                 </a>
               </span>
             </div>
-            <div className="pprice">
+            <div
+              className={`pprice ${isSpecial ? "justify-content-start" : ""}`}
+            >
               <span className="fw-medium">${discountPrice}</span>
               {isSpecial ? (
-                <SpecialTag text={`Save $${saveAmount}`} controlClass="special-tag-price"/>
+                <SpecialTag
+                  text={`SAVE $${saveAmount}`}
+                  controlClass="special-tag-price"
+                />
               ) : (
                 <span className="text-muted text-line-through">${price}</span>
               )}
