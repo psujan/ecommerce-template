@@ -4,8 +4,13 @@ import { forwardRef } from "react";
 import Button from "../../ui/Button";
 import CartImg1 from "../../../assets/images/cart/cart1.jpg";
 import styles from "./styles/UserTools.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const MiniCartMenu = forwardRef((props, ref) => {
+  const navigate = useNavigate(); 
+  const redirectToCart = ()=>{
+    navigate("/cart");
+  }
   return (
     <div ref={ref} style={props.style} className={props.className}>
       <ul>
@@ -69,7 +74,7 @@ const MiniCartMenu = forwardRef((props, ref) => {
       </div>
       <div className="py-2 d-flex gap-3">
         <Button title="Checkout" appendClass="d-inline-block  w-50" />
-        <Button title="View Cart" type="secondary" appendClass="w-50" />
+        <Button title="View Cart" type="secondary" appendClass="w-50" onClick={()=> redirectToCart()} />
       </div>
     </div>
   );

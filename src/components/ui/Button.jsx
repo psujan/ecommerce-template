@@ -8,12 +8,13 @@ export default function Button({
   type = "primary",
   iconClass = "",
   hoverTitle = "",
+  onClick = () => false,
 }) {
   let btnClass;
   btnClass = useDefaultClass ? `baseBtn ${appendClass} ` : `${appendClass}`;
   btnClass = type == "primary" ? `${btnClass} baseBtnPrimary` : btnClass;
   return (
-    <button title={hoverTitle} className={btnClass}>
+    <button title={hoverTitle} className={btnClass} onClick={onClick}>
       {iconClass ? (
         <i className={`${iconClass} ${title ? "pe-2" : ""}`}></i>
       ) : (
@@ -31,4 +32,5 @@ Button.propTypes = {
   type: PropTypes.string,
   iconClass: PropTypes.string,
   hoverTitle: PropTypes.string,
+  onClick: PropTypes.func
 };

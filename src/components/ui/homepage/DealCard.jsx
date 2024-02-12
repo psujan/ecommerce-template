@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function DealCard({ title, desc, image }) {
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+    <div className="col-sm-12 col-md-6 col-lg-4">
       <div className="deal-card">
         <Link to="/shop-by-deal">
           <div className="deal-card-img">

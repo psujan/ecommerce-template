@@ -1,42 +1,41 @@
 //utility classes throughout app
-.flx-1{
+.flx-1 {
   flex: 1;
 }
 
-.gap-1{
-  gap:4px
+.gap-1 {
+  gap: 4px;
 }
 
-.gap-2{
-  gap:6px
+.gap-2 {
+  gap: 6px;
 }
 
-.gap-3{
-  gap:8px
+.gap-3 {
+  gap: 8px;
 }
 
-.gap-4{
-  gap:10px
+.gap-4 {
+  gap: 10px;
 }
 
-.dot-list{
+.dot-list {
   list-style: disc;
 }
 
-.flx-center{
+.flx-center {
   @include center();
 }
 
-
-.t-bordered{
+.t-bordered {
   border: 1px solid $gray-100;
 }
 
-.bg-gray{
-  background-color: $gray-100;;
+.bg-gray {
+  background-color: $gray-100;
 }
 
-.bg-gray-light{
+.bg-gray-light {
   background-color: $gray-light;
 }
 
@@ -108,8 +107,8 @@
   }
 }
 
-.box-circle-sm{
-  @include box-center-round(16px ,16px)
+.box-circle-sm {
+  @include box-center-round(16px, 16px);
 }
 
 .no-display {
@@ -123,10 +122,10 @@
 .section-heading {
   h2 {
     display: block;
-    &:after{
-      content:'';
+    &:after {
+      content: "";
       display: block;
-      width:160px;
+      width: 160px;
       height: 1px;
       margin-top: 10px;
       background-color: $primary;
@@ -134,4 +133,32 @@
   }
 }
 
+.hover-color-primary {
+  transition: 0.25s ease;
+  &:hover {
+    color: $primary;
+  }
+}
 
+.table-custom {
+  width: 100%;
+  cursor: auto;
+  height: auto;
+  thead {
+    th {
+      padding: 18px 4px;
+      background-color: $gray-100;
+      text-align: center;
+    }
+  }
+  tbody {
+    tr {
+      border: 1px solid $gray-100;
+    }
+    td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 8px 4px;
+    }
+  }
+}

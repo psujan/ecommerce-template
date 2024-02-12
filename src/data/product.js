@@ -611,10 +611,63 @@ const DealProducts = [
   },
 ];
 
+const CartItems = [
+  {
+    title: "New Dress C Nice Elegant",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: Img14,
+    qty:1,
+    color:"White",
+    size:"Lg",
+    category:"Women's Clothing"
+  },
+  {
+    title: "Hover Skateboard Scooter",
+    discountPrice: "100",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: Img7,
+    qty:1,
+    color:'Black',
+    brand:"Roadster",
+    category:"Sports"
+  },
+  {
+    title: "Nikon DSLR Camera 4k",
+    discountPrice: "125",
+    price: "160",
+    rating: 4,
+    ratingCount: 25,
+    image: Img2,
+    qty:1,
+    category:"Cameras",
+    color:"Black",
+    brand:"Nikon"
+
+  },
+  {
+    title: "Brilliant Basics Bang On Backpack - Stars",
+    discountPrice: "20",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: d4,
+    qty:1,
+    category:"Children Essentials",
+    color:"Mixed",
+    
+  },
+]
+
 export {
   Products,
   SimilarProductList,
   CategoryProducts,
   CollectionProducts,
   DealProducts,
+  CartItems
 };

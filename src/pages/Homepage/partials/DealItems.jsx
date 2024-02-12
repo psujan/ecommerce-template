@@ -10,7 +10,7 @@ export default function DealItems() {
         <div className="section-heading mb-4">
           <h2 className="fw-bold ">Shop Deals From Zenith</h2>
         </div>
-        <div className="row">
+        <div className="row g-4">
           <DealCard
             title="New Year Specials"
             desc="Shop new year hot sales. Offer valid til Jan 15"
