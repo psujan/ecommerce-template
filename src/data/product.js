@@ -652,14 +652,14 @@ const CartItems = [
   {
     title: "Brilliant Basics Bang On Backpack - Stars",
     discountPrice: "20",
-    price: "150",
+    price: "40",
     rating: 4,
     ratingCount: 28,
     image: d4,
     qty:1,
     category:"Children Essentials",
     color:"Mixed",
-    
+    saveAmount: "15",
   },
 ]
 

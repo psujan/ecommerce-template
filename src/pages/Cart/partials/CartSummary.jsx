@@ -1,6 +1,11 @@
 import Button from "../../../components/ui/Button"
+import { useNavigate } from "react-router-dom"
 
 export default function CartSummary(){
+  const navigate = useNavigate();
+  const redirectToCheckout = ()=>{
+    navigate("/checkout");
+  }
   return (
     <div className="p-3 border rounded">
       <h4 className="fw-medium mb-4">Order Summary</h4>
@@ -26,7 +31,7 @@ export default function CartSummary(){
           <span className="fw-bold">$394</span>
         </li>
         <li>
-        <Button title="Checkout (4)" appendClass="w-100"></Button>
+        <Button title="Checkout (4)" appendClass="w-100" onClick={()=>redirectToCheckout() }></Button>
         </li>
       </ul>
     </div>
