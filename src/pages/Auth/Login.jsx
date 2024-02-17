@@ -19,7 +19,7 @@ export default function Login() {
                       to="/register"
                       className="text-underline text-secondary"
                     >
-                      Cick Here
+                      Click Here
                     </Link>{" "}
                     to register
                   </span>
@@ -43,6 +43,7 @@ export default function Login() {
                     />
                   </form>
                   <div>
+                    <hr class="hr-divider"></hr>
                     <p className="fs-text">
                       Prefer login using social accounts ? Login Using :
                     </p>

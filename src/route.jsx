@@ -7,7 +7,7 @@ import DealItems from "./pages/DealItems/DealItems";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import Login from "./pages/Auth/Login";
-
+import Registration from "./pages/Auth/Registration";
 
 export default function AppRoutes() {
   return (
@@ -20,7 +20,7 @@ export default function AppRoutes() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/login" element={<Login />} />
-
+      <Route path="/register" element={<Registration />} />
     </Routes>
   );
 }

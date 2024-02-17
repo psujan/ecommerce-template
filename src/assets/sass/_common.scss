@@ -39,11 +39,11 @@
   background-color: $gray-light;
 }
 
-.bg-gray-neutral{
+.bg-gray-neutral {
   background-color: $gray-200;
 }
 
-.bg-blue{
+.bg-blue {
   background-color: $blue;
 }
 
@@ -52,8 +52,8 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
-.text-clr-blue{
-  color:$blue
+.text-clr-blue {
+  color: $blue;
 }
 
 .text-underline {
@@ -119,7 +119,7 @@
   }
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -153,6 +153,26 @@
   transition: 0.25s ease;
   &:hover {
     color: $primary;
+  }
+}
+
+.hr-divider {
+  height: 1px;
+  margin: 30px 0;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  background-color: $gray-400;
+  text-align: center;
+  &::after{
+    content: 'OR';
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    padding: 0 16px;
+    background-color: $white;
+    color: $black;
+    font-weight: 500;
   }
 }
 
