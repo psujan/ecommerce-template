@@ -6,6 +6,7 @@ import CollectionItems from "./pages/CollectionItems/CollectionItem";
 import DealItems from "./pages/DealItems/DealItems";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
+import Login from "./pages/Auth/Login";
 
 
 export default function AppRoutes() {
@@ -18,6 +19,8 @@ export default function AppRoutes() {
       <Route path="/shop-by-deal" element={<DealItems />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
+      <Route path="/login" element={<Login />} />
+
     </Routes>
   );
 }

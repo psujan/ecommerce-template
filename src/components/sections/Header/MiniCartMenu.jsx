@@ -7,10 +7,10 @@ import styles from "./styles/UserTools.module.scss";
 import { useNavigate } from "react-router-dom";
 
 const MiniCartMenu = forwardRef((props, ref) => {
-  const navigate = useNavigate(); 
-  const redirectToCart = ()=>{
-    navigate("/cart");
-  }
+  const navigate = useNavigate();
+  const redirectTo = (path) => {
+    navigate(path);
+  };
   return (
     <div ref={ref} style={props.style} className={props.className}>
       <ul>
@@ -73,8 +73,17 @@ const MiniCartMenu = forwardRef((props, ref) => {
         </div>
       </div>
       <div className="py-2 d-flex gap-3">
-        <Button title="Checkout" appendClass="d-inline-block  w-50" />
-        <Button title="View Cart" type="secondary" appendClass="w-50" onClick={()=> redirectToCart()} />
+        <Button
+          title="Checkout"
+          appendClass="d-inline-block  w-50"
+          onClick={() => redirectTo("/checkout")}
+        />
+        <Button
+          title="View Cart"
+          type="secondary"
+          appendClass="w-50"
+          onClick={() => redirectTo("/cart")}
+        />
       </div>
     </div>
   );
