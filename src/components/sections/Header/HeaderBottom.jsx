@@ -12,7 +12,7 @@ export default function HeaderBottom() {
 
   return (
     <div
-      className={`${styles.headerBottom} d-flex align-items-center border-bottom-light position-relative`}
+      className={`d-none d-lg-flex d-flex align-items-center border-bottom-light position-relative`}
     >
       <div className="container-fluid px-0">
         <div className={`d-flex align-items-center ${styles.headerBottomNav}`}>
