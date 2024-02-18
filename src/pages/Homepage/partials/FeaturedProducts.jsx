@@ -10,11 +10,10 @@ export default function FeaturedProducts() {
         </div>
         <div className="row p-row no-gutters">
           {Products.map((row, i) => {
-            console.log(i);
             const card =
               (i + 1) % 5 == 0 ? (
                 <>
-                  <ProductCard key={i} {...row}></ProductCard>
+                  <ProductCard key={i + 1} {...row}></ProductCard>
                   <div className="p-row-break"></div>
                 </>
               ) : (

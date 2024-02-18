@@ -31,10 +31,8 @@ export default function ProductCard({
             <div className="ptitle">{title}</div>
             <div className="prating">
               <span className="text-primary">{stars}</span>
-              <span className="ps-2 text-muted text-underline">
-                <a href={() => false} className="">
-                  ({ratingCount})
-                </a>
+              <span className="ps-2 text-muted text-underline cur-p">
+                ({ratingCount})
               </span>
             </div>
             <div
