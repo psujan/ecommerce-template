@@ -1,3 +1,5 @@
+import { Pages } from "../../data/pages";
+import { Link } from "react-router-dom";
 import Logo from "../ui/Logo";
 export default function Footer() {
   return (
@@ -130,6 +132,22 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section footer-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 mb-3 text-uppercase">All Pages ({Pages.length})</div>
+            <div className="col-lg-9">
+              <ul className="footer-list">
+                {Pages.map((page, i) => (
+                  <li className="fs-tiny d-inline-block pe-3 mb-2 " key={i}>
+                    <Link to={page.path}>{page.name}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

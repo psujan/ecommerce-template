@@ -13,16 +13,6 @@ export default function Login() {
               <div className="p-3">
                 <div className="d-flex justify-content-between align-items-center mb-4">
                   <h3 className="fw-bold ">Login</h3>
-                  <span className="fs-text text-muted">
-                    New User 👱🏼{" "}
-                    <Link
-                      to="/register"
-                      className="text-underline text-secondary"
-                    >
-                      Click Here
-                    </Link>{" "}
-                    to register
-                  </span>
                 </div>
                 <div>
                   <form action="" className="my-4">
@@ -105,6 +95,18 @@ export default function Login() {
                         <span className="ps-2">Facebook</span>
                       </button>
                     </div>
+                  </div>
+                  <div>
+                  <span className="fs-text text-muted">
+                    New User 👱🏼{" "}
+                    <Link
+                      to="/register"
+                      className="text-underline text-secondary"
+                    >
+                      Click Here
+                    </Link>{" "}
+                    to register
+                  </span>
                   </div>
                 </div>
               </div>
