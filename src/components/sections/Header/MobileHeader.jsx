@@ -8,7 +8,7 @@ export default function MobileHeader() {
   const dispatch = useDispatch();
   return (
     <div className="mobile-header">
-      <div className="d-flex align-items-center justify-content-between d-lg-none py-2 px-1">
+      <div className="d-flex align-items-center justify-content-between d-lg-none py-2 px-2">
         <div>
           <a
             onClick={() => dispatch(toggleSideNav(true))}

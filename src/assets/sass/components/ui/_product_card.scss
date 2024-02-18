@@ -94,7 +94,7 @@
 }
 
 .special-tag {
-  padding:4px;
+  padding: 4px;
   border-radius: 4px;
   background-color: $yellow;
   font-size: 12px;
@@ -109,10 +109,10 @@
   transform-origin: top left;
 }
 
-.special-tag-price{
+.special-tag-price {
   position: relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   transform: none;
   margin-left: 12px;
   // color:$white;
@@ -134,5 +134,17 @@
     .col-xl {
       max-width: 20% !important;
     }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .deal-card {
+    .deal-card-img {
+      height: 210px !important;
+    }
+  }
+
+  .collection-card .collection-images .collection-img {
+    height: 100px;
   }
 }
