@@ -1,0 +1,11 @@
+.search-box-link{
+  transition: 0.25s ease;
+  &:hover{
+    border-color: $primary !important;
+    span {
+      i{
+        color: $primary;
+      }
+    }
+  }
+}

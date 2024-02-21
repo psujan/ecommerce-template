@@ -34,8 +34,11 @@ export const Pages = [
   {
     name:'Register',
     path:'/register'
+  },
+  {
+    name:'Search Results',
+    path: '/search-results'
   }
-
   /**
    * <Route path="/" element={<Homepage />} />
       <Route path="/product-detail" element={<ProductDetail />} />

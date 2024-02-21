@@ -8,6 +8,7 @@ import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import Login from "./pages/Auth/Login";
 import Registration from "./pages/Auth/Registration";
+import SearchResults from "./pages/SearchResults/SearchResults";
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
+      <Route path="/search-results" element={<SearchResults />} />
     </Routes>
   );
 }

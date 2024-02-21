@@ -54,6 +54,23 @@ import d2 from "../assets/images/products/p-d-2.jpg";
 import d3 from "../assets/images/products/p-d-3.jpg";
 import d4 from "../assets/images/products/p-d-4.jpg";
 
+//for search results
+import se1 from "../assets/images/products/p-se-1.jpg";
+import se2 from "../assets/images/products/p-se-2.jpg";
+import se3 from "../assets/images/products/p-se-3.jpg";
+import se4 from "../assets/images/products/p-se-4.jpg";
+import se5 from "../assets/images/products/p-se-5.jpg";
+import se6 from "../assets/images/products/p-se-6.jpg";
+import se7 from "../assets/images/products/p-se-7.jpg";
+import se8 from "../assets/images/products/p-se-8.jpg";
+import se9 from "../assets/images/products/p-se-9.jpg";
+import se10 from "../assets/images/products/p-se-10.jpg";
+import se11 from "../assets/images/products/p-se-11.jpg";
+import se12 from "../assets/images/products/p-se-12.jpg";
+import se13 from "../assets/images/products/p-se-13.jpg";
+import se14 from "../assets/images/products/p-se-14.jpg";
+import se15 from "../assets/images/products/p-se-15.jpg";
+
 const Products = [
   {
     title: "Samsung Galaxy Ram 4GB,6GB New",
@@ -611,6 +628,129 @@ const DealProducts = [
   },
 ];
 
+const SearchProducts = [
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se1,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se2,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se3,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se4,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se5,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se6,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se7,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se8,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se9,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se10,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se11,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se12,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se13,
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se14
+  },
+  {
+    title: "Stylish Work/Walk Shoe",
+    discountPrice: "99",
+    price: "150",
+    rating: 4,
+    ratingCount: 28,
+    image: se15,
+  },
+]
+
 const CartItems = [
   {
     title: "New Dress C Nice Elegant",
@@ -669,5 +809,6 @@ export {
   CategoryProducts,
   CollectionProducts,
   DealProducts,
-  CartItems
+  CartItems,
+  SearchProducts
 };
