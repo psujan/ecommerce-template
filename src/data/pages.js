@@ -1,44 +1,48 @@
 export const Pages = [
   {
-    name:'Home',
-    path:"/home",
+    name: "Home",
+    path: "/home",
   },
   {
-    name:'Product Detail',
-    path:'/product-detail'
+    name: "Product Detail",
+    path: "/product-detail",
   },
   {
-    name:'Shop By Category',
-    path:'/shop-by-category'
+    name: "Shop By Category",
+    path: "/shop-by-category",
   },
   {
-    name:'Shop By Collection',
-    path:'/shop-by-collection'
+    name: "Shop By Collection",
+    path: "/shop-by-collection",
   },
   {
-    name:'Shop By Deal',
-    path:'/shop-by-deal'
+    name: "Shop By Deal",
+    path: "/shop-by-deal",
   },
   {
-    name:'Cart',
-    path:'/cart'
+    name: "Cart",
+    path: "/cart",
   },
   {
-    name:'Checkout',
-    path:'/checkout'
+    name: "Checkout",
+    path: "/checkout",
   },
   {
-    name:'Login',
-    path:'/login'
+    name: "Login",
+    path: "/login",
   },
   {
-    name:'Register',
-    path:'/register'
+    name: "Register",
+    path: "/register",
   },
   {
-    name:'Search Results',
-    path: '/search-results'
-  }
+    name: "Search Results",
+    path: "/search-results",
+  },
+  {
+    name: "Empty Search",
+    path: "/search-results-empty",
+  },
   /**
    * <Route path="/" element={<Homepage />} />
       <Route path="/product-detail" element={<ProductDetail />} />
@@ -50,4 +54,4 @@ export const Pages = [
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
    */
-]
+];

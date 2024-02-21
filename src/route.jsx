@@ -9,6 +9,7 @@ import Checkout from "./pages/Checkout/Checkout";
 import Login from "./pages/Auth/Login";
 import Registration from "./pages/Auth/Registration";
 import SearchResults from "./pages/SearchResults/SearchResults";
+import EmptySearch from "./pages/SearchResults/EmptySearch";
 
 export default function AppRoutes() {
   return (
@@ -23,6 +24,8 @@ export default function AppRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
       <Route path="/search-results" element={<SearchResults />} />
+      <Route path="/search-results-empty" element={<EmptySearch />} />
+
     </Routes>
   );
 }
