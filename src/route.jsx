@@ -10,6 +10,7 @@ import Login from "./pages/Auth/Login";
 import Registration from "./pages/Auth/Registration";
 import SearchResults from "./pages/SearchResults/SearchResults";
 import EmptySearch from "./pages/SearchResults/EmptySearch";
+import SavedItems from "./pages/Cart/SavedItems";
 
 export default function AppRoutes() {
   return (
@@ -25,7 +26,7 @@ export default function AppRoutes() {
       <Route path="/register" element={<Registration />} />
       <Route path="/search-results" element={<SearchResults />} />
       <Route path="/search-results-empty" element={<EmptySearch />} />
-
+      <Route path="/saved-items" element={<SavedItems />} />
     </Routes>
   );
 }

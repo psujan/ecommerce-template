@@ -16,8 +16,8 @@ export default function EmptySearch() {
       <section className="">
         <div className="container">
           <div className="row my-3 p-row no-gutters">
-            <div className="col-lg-12">
-              <span className="text-center pb-2 d-block text-uppercase text-secondary fw-medium">
+            <div className="col-lg-12 py-5 mb-4 bg-gray-light rounded">
+              <span className="text-center pb-2 mb-3 d-block text-uppercase text-secondary fw-medium">
                 Sorry {}
               </span>
               <p className="text-muted text-center fs-text">

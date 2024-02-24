@@ -43,6 +43,10 @@ export const Pages = [
     name: "Empty Search",
     path: "/search-results-empty",
   },
+  {
+    name: "Saved Items",
+    path: "/saved-items",
+  },
   /**
    * <Route path="/" element={<Homepage />} />
       <Route path="/product-detail" element={<ProductDetail />} />
