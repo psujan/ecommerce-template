@@ -3,7 +3,7 @@ import PageLayout from "../../components/layouts/PageLayout";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import { CategoryProducts } from "../../data/product";
 import ProductCard from "../../components/ui/ProductCard";
-import ProductFilter from "../../components/ui/prouduct-filter/ProductFilter";
+import SideProductFilter from "../../components/ui/prouduct-filter/SideProductFilter";
 import Form from "react-bootstrap/Form";
 
 const BREADCRUMB_ITEMS = [
@@ -32,7 +32,7 @@ export default function CategoryItems() {
             <div
               className={`col-lg-2 filter-col ${openSideFilter ? "open" : ""}`}
             >
-              <ProductFilter closeSideFilter={() => openFilterMenu(false)} />
+              <SideProductFilter closeSideFilter={() => openFilterMenu(false)} />
             </div>
             <div className="col-lg-10 col-md-12">
               <div className="row mb-4">

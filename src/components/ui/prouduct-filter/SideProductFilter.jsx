@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Button from "../Button";
-export default function ProductFilter({ closeSideFilter }) {
+export default function SideProductFilter({ closeSideFilter }) {
   return (
     <div className="product-filter-wrap">
       <div className="d-flex justify-content-between align-items-center mb-4">

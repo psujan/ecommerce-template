@@ -54,3 +54,27 @@ $ig-blue: $primary;
   }
 }
 
+
+//modal for product filter
+.modal-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+
+.modal-filter{
+  margin-top: 100px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

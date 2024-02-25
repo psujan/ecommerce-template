@@ -29,6 +29,16 @@
   background-color: $gray-200;
 }
 
+.baseBtnPrimaryOutline{
+  color:$primary;
+  background-color: $white;
+  border-color: $primary;
+  &:hover{
+    background-color: $primary;
+    color: $white;
+  }
+}
+
 .baseBtnRound {
   border-radius: 30px;
 }
