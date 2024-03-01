@@ -6,6 +6,7 @@ import ColorFilter from "../../ui/select-filter/ColorFilter";
 import Button from "../../ui/Button";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
+import ModalFilterContent from "./partials/ModalFilterContent";
 
 export default function RowProductFilter() {
   const openFilterModal = () => {
@@ -47,7 +48,9 @@ export default function RowProductFilter() {
         <Modal.Header closeButton>
           <h3 className="fw-bold">Filters</h3>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <ModalFilterContent />
+        </Modal.Body>
         <Modal.Footer>
           <Button type="none" title="Close" onClick={handleClose}></Button>
           <Button

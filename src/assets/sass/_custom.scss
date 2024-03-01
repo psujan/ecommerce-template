@@ -44,16 +44,15 @@ $ig-blue: $primary;
 }
 
 //react-select-dropdown
-.filter-select{
+.filter-select {
   min-width: 180px;
 }
 
-.price-select{
-  .react-dropdown-select-dropdown{
+.price-select {
+  .react-dropdown-select-dropdown {
     width: 250px;
   }
 }
-
 
 //modal for product filter
 .modal-animate-bottom {
@@ -61,10 +60,17 @@ $ig-blue: $primary;
   animation: animatebottom 0.4s;
 }
 
-.modal-filter{
+.modal-filter {
   margin-top: 100px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  .modal-header {
+    border: 0;
+    margin-bottom:30px;
+  }
+  .modal-body {
+    padding: 0;
+  }
 }
 
 @keyframes animatebottom {
@@ -76,5 +82,27 @@ $ig-blue: $primary;
   to {
     bottom: 0;
     opacity: 1;
+  }
+}
+
+// filter modal
+.modal-filter-accordion {
+  padding: 0;
+  .accordion-item {
+    border: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
+    background-color: $white !important;
+    margin: 0;
+  }
+  .accordion-button {
+    &:not(.collapsed) {
+      background-color: $white;
+      box-shadow: none;
+      border: none;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $gray-100;
+    }
   }
 }
